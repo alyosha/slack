@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/slack-go/slack/slackutilsx"
+	"github.com/alyosha/slack/slackutilsx"
 )
 
 const (

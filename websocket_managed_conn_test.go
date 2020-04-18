@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/alyosha/slack"
+	"github.com/alyosha/slack/slacktest"
 	websocket "github.com/gorilla/websocket"
-	"github.com/slack-go/slack"
-	"github.com/slack-go/slack/slacktest"
 	"github.com/stretchr/testify/assert"
 )
 

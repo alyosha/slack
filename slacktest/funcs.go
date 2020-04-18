@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
+	slack "github.com/alyosha/slack"
 	websocket "github.com/gorilla/websocket"
-	slack "github.com/slack-go/slack"
 )
 
 func (sts *Server) queueForWebsocket(s, hubname string) {
