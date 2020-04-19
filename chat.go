@@ -412,6 +412,7 @@ func MsgOptionResponseURL(url string, responseType string) MsgOption {
 // MsgOptionDeleteOriginal deletes the original message using response URL.
 func MsgOptionDeleteOriginal(url string) MsgOption {
 	return func(config *sendConfig) error {
+		config.mode = chatResponse
 		config.endpoint = url
 		config.deleteOriginal = true
 		config.values.Del("ts")
